@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(180deg, #C1E1FF 0%, #0085FF 100%);
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+}
+.container{
+  background-color: antiquewhite;
+  width: 400px;
+  margin: 100px auto;
+  padding: 10px 100px;
+  border-radius: 30px;
+}
+#order-information{
+  color: chocolate;
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: 'Quicksand', sans-serif;
+}
+.click-button{
+  background-color:rgb(180,150,200);
+  border:0px;
+  color:brown;
+  margin:10px;
+  border-radius:45px;
+  font-size:25px;
+  display:block;
+  font-family: 'Quicksand', sans-serif;
+  cursor:pointer;
+}
+.inputName{
+  color:rgba(116, 6, 4, 0.907) ;
+  background-color:rgba(23, 118, 165, 0.601);      
+  border: 0px;
+  border-radius: 45px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px 3px;
+  font-size: 25px;
+}
+.nametag{
+  background-color:rgba(23, 118, 165, 0.601);
+  color:brown;
+  /* border: 0 px; */
+  border-radius: 45px;
+  width: 80px;
+  padding: 5px 8px;
+  margin: 10px 3px 5px 10px;
+  font-size: 25px;
+}
+#showName{
+  margin: 5px;
+}    
+hr{
+  border: dashed blue 2px;
+}
+li{
+  list-style: none;
+  position:relative;
+}
+ul{
+  position: relative;
+  left: -40px;
+}
+select{
+  display: block;
+  border: 0px;
+  color: brown;
+  background-color:rgba(23, 118, 165, 0.601) ;
+  border-radius: 45px;
+  width: 140px;
+  padding: 5px 8px;
+  margin: 10px 3px 5px 10px;
+  font-size: 20px;
+
+}

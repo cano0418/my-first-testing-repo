@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂購表單</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-wrapper">
+            <form action method="post" class="input-wrapper" id="input-wrapper">
+                <label class="nametag" id="nametag" for="keyword">輸入姓名:</label>
+                <input class="inputName" id="keyword" required placeholder="請輸入姓名">
+                <select id="cloth-type">
+                    <option value="coat">外套</option>
+                    <option value="shirt">上衣</option>
+                    <option value="pents">下身</option>
+                  </select>
+                <select id="my-colors">
+                    <option value="red">鮮豔的紅色</option>
+                    <option value="orange">美麗的橘色</option>
+                    <option value="yellow">亮眼的黃色</option>
+                  </select>                  
+                <button class="click-button" id="buy-it">我要訂購</button>
+            </form>
+           
+            <div id="order-information">
+                <ul>我要訂購</ul>
+                <hr>
+                <li>您的訂單</li>
+                <li>顧客姓名：<span id="showName"></span></li>
+                <li>服裝類型：<span id="showType"></span></li>
+                <li>服裝分類：<span id="showColor"></span></li>
+                <p></p>
+                <hr>
+            </div>
+            <button class="click-button" id="introduction">認識工廠</button>
+        </div>
+    </div>
+    
+</body>
+</html>
