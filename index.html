@@ -15,8 +15,12 @@
     <div class="container">
         <div class="inner-wrapper">
             <form action method="post" class="input-wrapper" id="input-wrapper">
-                <label class="nametag" id="nametag" for="keyword">輸入姓名:</label>
+                <label class="nametag" for="keyword">輸入姓名:</label>
                 <input class="inputName" id="keyword" required placeholder="請輸入姓名">
+                <select id="cloth-style">
+                    <option value="mans">男裝</option>
+                    <option value="womens">女裝</option>
+                </select>
                 <select id="cloth-type">
                     <option value="coat">外套</option>
                     <option value="shirt">上衣</option>
@@ -26,17 +30,22 @@
                     <option value="red">鮮豔的紅色</option>
                     <option value="orange">美麗的橘色</option>
                     <option value="yellow">亮眼的黃色</option>
-                  </select>                  
+                  </select>
+                <label class="nametag" for="orderqty">訂購數量:</label>
+                <input id="orderqty" type="number" required placeholder="單位為[件]" min="1" step="1" name="orderqty">                  
                 <button class="click-button" id="buy-it">我要訂購</button>
             </form>
            
             <div id="order-information">
-                <ul>我要訂購</ul>
+                <ul>訂單內容</ul>
                 <hr>
                 <li>您的訂單</li>
                 <li>顧客姓名：<span id="showName"></span></li>
+                <li>服裝分類：<span id="showStyle"></span></li>
                 <li>服裝類型：<span id="showType"></span></li>
-                <li>服裝分類：<span id="showColor"></span></li>
+                <li>服裝顏色：<span id="showColor"></span></li>
+                <li>訂購數量：<span id="showQty"></span></li>
+                <li>初步估價：<span id="showAmount"></span></li>
                 <p></p>
                 <hr>
             </div>
